@@ -33,3 +33,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/checkin/{book}', 'CheckinBookController@store');
+
+Route::get('/authors/create', 'AuthorsController@create')->name('authors.create');
